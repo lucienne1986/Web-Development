@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Lesson</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<!--
+		action - where the form sends data to
+		method - what HTTP method (get or post)
+	-->
+	<form action="http://wikipedia.org" method="post">
+		<!--
+		<input type="text">
+		<input type="date">
+		<input type="color">
+		<input type="file">
+		<input type="checkbox">
+		<h1>Colours</h1>
+		<p>Which do you prefer?</p>
+		<select>
+			<option value="red">Red</option>
+			<option value="orange">Orange</option>
+			<option value="blue">Blue</option>
+			
+		</select>
+
+		
+		textarea tag
+		<textarea rows="10" cols="10" name="paragraph"></textarea>
+
+		<input type="submit">
+		</br>
+		-->
+		<div>
+			<label for="fname">First Name: </label>
+			<input name="fName" type="text" placeholder="fname">
+			<label for="sname">Last Name: </label>
+			<input name="sName" type="text" placeholder="lname">
+		</div>
+		<div>
+			<label for="Male">Male: </label>
+			<input name="male" id="male" type="radio" value="male">
+
+			<label for="Female">Female: </label>
+			<input name="female" id="female" type="radio" value="female">
+
+			<label for="Other">Other: </label>
+			<input name="other" id="other" type="radio" value="other">
+		</div>
+
+		<div>
+			<label for="Email">Enter Email: </label>
+			<input name="uEmail" type="email" placeholder="email" required="">
+
+			<label for="Password">Enter Password: </label>
+			<input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+		</div>
+		<div>
+			<label for="Birthday">Enter Birthday: </label>
+			Month
+			<select name="Birthday-month" id="month">
+				<option value="0" selected disabled>Month</option>
+				<option value="jan">Jan</option>
+				<option value="feb">Feb</option>
+				<option value="mar">March</option>
+				
+			</select>
+			Day
+			<select name="Birthday-day" id="day">
+				<option value="0" selected disabled>Day</option>
+				<option value="num1">1</option>
+				<option value="num2">2</option>
+				<option value="num3">3</option>
+				
+			</select>
+			Year
+			<select name="Birthday-year" id="year">
+				<option value="0" selected disabled>Year</option>
+				<option value="year1">1980</option>
+				<option value="year2">1981</option>
+				<option value="year3">1982</option>
+				
+			</select>
+		</div>
+		<label for="terms">I agree to the terms and conditions: </label>
+		<input name="terms" id="terms" type="checkbox" >
+
+		<input type="submit" value="submit">	
+	
+
+	</form>	
+
+</body>
+</html>
